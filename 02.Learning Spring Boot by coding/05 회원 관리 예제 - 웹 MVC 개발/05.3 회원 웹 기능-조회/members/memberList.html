@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+  <div>
+    <table> <!--추가된 멤버들 테이블 형식으로 출력-->
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>이름</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="member : ${members}"> <!--${} 는 괄호안의 모델 객체를 가져옴  // th:thymeleaf 문법 -->
+        <td th:text="${member.id}"></td> <!--멤버의 아이디  -->
+        <td th:text="${member.name}"></td> <!--멤버 이름 -->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div> <!-- /container -->
+</body>
+</html>
