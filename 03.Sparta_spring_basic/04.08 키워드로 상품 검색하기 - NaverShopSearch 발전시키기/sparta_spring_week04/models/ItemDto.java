@@ -17,7 +17,7 @@ public class ItemDto { // 네이버 검색 결과 상품의 정보의 매개체
     public ItemDto(JSONObject itemJson){
         this.title = itemJson.getString("title");
         this.image = itemJson.getString("image");
-        this.lprice = itemJson.getInt("lprece");
+        this.lprice = itemJson.getInt("lprice");
         this.link = itemJson.getString("link");
     }
 }
