@@ -50,6 +50,6 @@ public class User extends Timestamped{
     private UserRole role;
 
     // 카카오 로그인 인증 코드
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Long kakaoId;
 }
